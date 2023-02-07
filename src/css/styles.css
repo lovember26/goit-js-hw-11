@@ -59,7 +59,8 @@ body {
   margin: 0;
 }
 .load-more {
-  margin: 20px 700px;
+  display: block;
+  margin: 20px auto;
   width: 100px;
   height: 30px;
   background-color: lightskyblue;
