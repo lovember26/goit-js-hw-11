@@ -1,6 +1,6 @@
 const API = 'https://pixabay.com/api/';
 const API_KEY = '33416978-83b6039768e3c677abe323884';
-const axios = require('axios').default;
+import axios from 'axios';
 
 export default class ImgApiService {
   constructor() {
