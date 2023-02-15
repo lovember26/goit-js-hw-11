@@ -26,8 +26,9 @@ async function onFormSubmit(e) {
     return;
   }
   try {
+    document.querySelector('.searchBtn').disabled = true;
     const gallery = await imgApi.fetchImages();
-
+    document.querySelector('.searchBtn').disabled = false;
     if (gallery.hits.length === 0) {
       Notify.failure(
         'Sorry, there are no images matching your search query. Please try again.'
